@@ -1,0 +1,147 @@
+.navbar {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+  align-items: center;
+
+  // Media Query for Mobile
+  @media (max-width: 768px) {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .left {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    // Media Query for Mobile
+    @media (max-width: 768px) {
+      width: 100%;
+      align-items: center;
+    }
+
+    .logo{
+      // Media Query for Mobile
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    
+    .name {
+      font-size: 1.4rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: #d4d4d4;
+
+      // Media Query for Mobile
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+
+      span {
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+
+    .menus {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      // Media Query for Mobile
+      @media (max-width: 768px) {
+        display: none;
+      }
+        
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        color: #d4d4d4;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+          content: "<";
+          color: transparent;
+          padding-right: 0.5rem;
+        }
+
+        &::after {
+          content: ">";
+          color: transparent;
+          padding-left: 0.5rem;
+        }
+
+        &:hover {
+          color: #7814e2;
+          &::before,
+          &::after {
+            color: currentColor;
+          }
+        }
+      }
+    }
+  }
+
+  
+  .right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    // Media Query for Mobile
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+  
+
+    .social {
+      display: flex;
+      gap: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+      p{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #d4d4d4;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          fill: #7814e2;
+        }
+        p {
+          color: #7814e2;
+        }
+      }
+    }
+  }
+
+  .menu{
+    display: none;
+    // Media Query for Mobile
+    @media (max-width: 768px) {
+      display: block;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+     
+      img{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}

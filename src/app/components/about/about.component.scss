@@ -1,0 +1,109 @@
+.about {
+  margin: 7rem 0;
+  padding: 0 14%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  // Media Query for Mobile
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    // Media Query for Mobile
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .card {
+      width: 100%;
+      border-radius: 7.862px;
+      background: #000;
+      box-shadow: 0px 6.289px 14.151px 0px rgba(0, 0, 0, 0.25);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      .card_left {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        gap: 1rem;
+        h1 {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #fff;
+        }
+        p {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: #85868d;
+        }
+        h6 {
+          text-decoration: underline;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+
+      .card_right {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+  .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    // Media Query for Mobile
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    h6{
+        font-size: .8rem;
+        font-weight: 600;
+        color: #78797D;
+    }
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    h3{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #fff;
+        font-style: italic;
+    }
+
+    p{
+        font-size: .9rem;
+        font-weight: 400;
+        color: #85868D;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<div class="skills">
+  <div class="left">
+    <div class="title">
+      <p>Skills</p>
+      <h1>Software & skills</h1>
+    </div>
+  </div>
+  <div class="right">
+    <div class="design">
+      <h1>DESIGN & PROTOTYPING</h1>
+      <div class="designs_container">
+        <div class="item" *ngFor="let skill of skills">
+          <div class="image">
+            <img src="{{skill.image}}" alt="" />
+          </div>
+          <p>{{skill.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="wireframe">
+        <h1>WIRE FRAMING & USER FLOWS</h1>
+        <div class="wires">
+            <div class="wire" *ngFor="let wire of wireframes">
+                <p>{{wire.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="wireframe">
+        <h1>KEY SKILLS</h1>
+        <div class="wires">
+            <div class="wire" *ngFor="let key of keySkills">
+                <p>{{key.name}}</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
